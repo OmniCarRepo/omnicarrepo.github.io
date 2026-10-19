@@ -11,7 +11,7 @@ URL người dùng thêm: **https://omnicarrepo.github.io/** (đổi trong `repo
 |---|---|
 | `debs/` | Bỏ file `.deb` vào đây. Giữ vài bản cũ nếu muốn người dùng hạ cấp được. |
 | `static/` | Chép nguyên lên web: trang chủ, `CydiaIcon.png`, `sileo-featured.json`, depiction. |
-| `static/depictions/<package>/` | `sileo.json` (depiction gốc của Sileo), `index.html` (Zebra / trình duyệt), `icon.png`, `header.png`, `banner.png`, `changelog.md`. |
+| `static/depictions/<package>/` | `sileo.json` (depiction gốc của Sileo), `index.html` (Zebra / trình duyệt), `icon.png`, `header.png`, `banner.png`, `changelog.md`, `description.txt` (mô tả Sileo hiện, ghi đè mô tả trong `.deb`; mỗi câu một dòng, `.` = dòng trống). |
 | `scripts/build.py` | Dựng repo vào `_site/` (chỉ cần Python 3). |
 | `repo.conf` | URL gốc, Origin / Label / mô tả của repo. |
 
