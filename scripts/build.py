@@ -6,6 +6,7 @@
   static/depictions/<package>/    -> Depiction / SileoDepiction / Icon / Header fields of that package;
                                      "__VERSION__" in its files becomes the newest version in debs/,
                                      "__CHANGELOG__" in sileo.json becomes changelog.md (as a JSON string)
+  static/depictions/<package>/summary.txt -> written over the first line of the deb's Description
   AUTHOR / MAINTAINER in repo.conf  -> written over the deb's own Author / Maintainer
 
 Signing: when the GPG_KEY_ID environment variable is set (key already imported), writes InRelease and
@@ -115,6 +116,12 @@ def main():
                 fields = [f for f in fields if f[0] != field] + [[field, conf[key]]]
 
         dep = ROOT / "static" / "depictions" / pkg
+        if (dep / "summary.txt").exists():
+            # First Description line = the one-line summary Sileo lists; the rest (long text) stays.
+            summary = (dep / "summary.txt").read_text(encoding="utf-8").strip()
+            for f in fields:
+                if f[0] == "Description":
+                    f[1] = summary + ("\n" + f[1].split("\n", 1)[1] if "\n" in f[1] else "")
         if dep.is_dir():
             drop = {"Depiction", "SileoDepiction", "Header"}
             if (dep / "icon.png").exists():
