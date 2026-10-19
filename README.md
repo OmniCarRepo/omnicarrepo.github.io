@@ -3,7 +3,7 @@
 APT repo cho Sileo / Zebra, phát OmniCar (và các tweak khác). Chạy trên GitHub Pages, mỗi lần push lên `main`
 GitHub Actions tự dựng lại `Packages` / `Release` và xuất bản.
 
-URL người dùng thêm: **https://omnicarrepo.github.io/OmniCarRepo/** (đổi trong `repo.conf`).
+URL người dùng thêm: **https://omnicarrepo.github.io/** (đổi trong `repo.conf`).
 
 ## Cấu trúc
 
@@ -21,10 +21,10 @@ Trong depiction: `__BASE__` = URL gốc, `__VERSION__` = bản mới nhất tron
 
 ## Lần đầu
 
-1. Repo GitHub: `OmniCarRepo/OmniCarRepo`, **public** (đổi tên repo thì phải đổi `BASE_URL` theo).
-2. `git remote add origin git@github.com:OmniCarRepo/OmniCarRepo.git && git push -u origin main`
+1. Repo GitHub: `OmniCarRepo/omnicarrepo.github.io`, **public**. Đúng tên này thì URL mới là `https://omnicarrepo.github.io/`; đổi tên repo thì URL đổi theo.
+2. `git remote add origin git@github.com:OmniCarRepo/omnicarrepo.github.io.git && git push -u origin main`
 3. GitHub > repo > **Settings > Pages > Source: GitHub Actions**. Chạy lại workflow **Publish repo** nếu lần đầu bị lỗi.
-4. Mở `https://omnicarrepo.github.io/OmniCarRepo/` trên iPhone > **Add to Sileo**.
+4. Mở `https://omnicarrepo.github.io/` trên iPhone > **Add to Sileo**.
 
 ## Phát hành bản mới
 
