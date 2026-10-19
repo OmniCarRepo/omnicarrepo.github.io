@@ -1,4 +1,4 @@
-# AnLai Repo
+# OmniCar Repo
 
 APT repo cho Sileo / Zebra, phát OmniCar (và các tweak khác). Chạy trên GitHub Pages, mỗi lần push lên `main`
 GitHub Actions tự dựng lại `Packages` / `Release` và xuất bản.
