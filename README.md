@@ -3,7 +3,7 @@
 APT repo cho Sileo / Zebra, phát OmniCar (và các tweak khác). Chạy trên GitHub Pages, mỗi lần push lên `main`
 GitHub Actions tự dựng lại `Packages` / `Release` và xuất bản.
 
-URL người dùng thêm: **https://anlai97.github.io/OmniCarRepo/** (đổi trong `repo.conf`).
+URL người dùng thêm: **https://omnicarrepo.github.io/** (đổi trong `repo.conf`).
 
 ## Cấu trúc
 
@@ -21,10 +21,10 @@ Trong depiction: `__BASE__` = URL gốc, `__VERSION__` = bản mới nhất tron
 
 ## Lần đầu
 
-1. Tạo repo **public** `AnLai97/OmniCarRepo` trên GitHub (tên repo quyết định URL `anlai97.github.io/OmniCarRepo/`).
-2. `git remote add origin git@github.com:AnLai97/OmniCarRepo.git && git push -u origin main`
+1. Tạo organization GitHub tên `OmniCarRepo` (github.com/organizations/plan, gói Free), trong đó tạo repo **public** tên `omnicarrepo.github.io` (đúng tên này thì URL mới là `https://omnicarrepo.github.io/`).
+2. `git remote add origin git@github.com:OmniCarRepo/omnicarrepo.github.io.git && git push -u origin main`
 3. GitHub > repo > **Settings > Pages > Source: GitHub Actions**. Chạy lại workflow **Publish repo** nếu lần đầu bị lỗi.
-4. Mở `https://anlai97.github.io/OmniCarRepo/` trên iPhone > **Add to Sileo**.
+4. Mở `https://omnicarrepo.github.io/` trên iPhone > **Add to Sileo**.
 
 ## Phát hành bản mới
 
@@ -39,5 +39,5 @@ Thử trên máy trước khi push: `python scripts/build.py` rồi xem `_site/P
 - **Ký Release**: tạo khoá GPG riêng cho repo, thêm secret `GPG_PRIVATE_KEY` (armored) và `GPG_PASSPHRASE`.
   Workflow tự ký `InRelease` + `Release.gpg`. Sileo / Zebra chạy được cả khi không ký.
 - **Tên miền riêng** (`repo.<tên miền>`): tạo `static/CNAME` chứa tên miền, đổi `BASE_URL` trong `repo.conf`,
-  trỏ DNS CNAME về `anlai97.github.io`. Muốn đếm lượt tải thì đặt sau Cloudflare.
-- **Nhánh beta**: tạo repo thứ hai (ví dụ `AnLai97/OmniCarRepo-beta`) dùng chung cấu trúc này.
+  trỏ DNS CNAME về `omnicarrepo.github.io`. Muốn đếm lượt tải thì đặt sau Cloudflare.
+- **Nhánh beta**: tạo repo thứ hai (ví dụ `OmniCarRepo/beta`, URL `omnicarrepo.github.io/beta/`) dùng chung cấu trúc này.
