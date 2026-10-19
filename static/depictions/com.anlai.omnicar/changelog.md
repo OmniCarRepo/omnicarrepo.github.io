@@ -1,3 +1,9 @@
+**1.0.3**
+- Speed Bubble: new source Wyn (speed from GPS; the limit when Wyn shows it, experimental).
+- Speed Bubble: Waze now shows the posted speed limit.
+- Settings: version next to the name at the top; cleaner page without the footer card.
+- Clearer package description and contact address.
+
 **1.0.2**
 - Split Screen: any app can go to the floating window; every panel closes when you tap anywhere else, like an iOS popup.
 - Split Screen dock button matches the Home button (black by day, white by night).
