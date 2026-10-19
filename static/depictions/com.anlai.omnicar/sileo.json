@@ -32,7 +32,7 @@
         { "class": "DepictionSeparatorView" },
         { "class": "DepictionTableTextView", "title": "Version", "text": "__VERSION__" },
         { "class": "DepictionTableTextView", "title": "Compatibility", "text": "iOS 15 – 16, rootless" },
-        { "class": "DepictionTableTextView", "title": "Developer", "text": "AnLai" },
+        { "class": "DepictionTableTextView", "title": "Developer", "text": "OmniCar" },
         { "class": "DepictionTableTextView", "title": "Price", "text": "Free" },
         { "class": "DepictionSeparatorView" },
         {

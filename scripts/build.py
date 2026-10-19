@@ -6,6 +6,7 @@
   static/depictions/<package>/    -> Depiction / SileoDepiction / Icon / Header fields of that package;
                                      "__VERSION__" in its files becomes the newest version in debs/,
                                      "__CHANGELOG__" in sileo.json becomes changelog.md (as a JSON string)
+  AUTHOR / MAINTAINER in repo.conf  -> written over the deb's own Author / Maintainer
 
 Signing: when the GPG_KEY_ID environment variable is set (key already imported), writes InRelease and
 Release.gpg. Sileo and Zebra accept an unsigned repo, so this is optional.
@@ -108,6 +109,10 @@ def main():
         target = f"pool/{pkg}_{ver}_{info.get('Architecture', 'all')}.deb"
         shutil.copyfile(deb, OUT / target)
         blob = deb.read_bytes()
+
+        for key, field in (("AUTHOR", "Author"), ("MAINTAINER", "Maintainer")):
+            if conf.get(key):
+                fields = [f for f in fields if f[0] != field] + [[field, conf[key]]]
 
         dep = ROOT / "static" / "depictions" / pkg
         if dep.is_dir():
