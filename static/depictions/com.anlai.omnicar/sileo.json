@@ -38,19 +38,8 @@
         {
           "class": "DepictionTableButtonView",
           "title": "Contact the developer",
-          "action": "mailto:laihoangan123456@gmail.com?subject=OmniCar",
+          "action": "mailto:omnicartweak@gmail.com?subject=OmniCar",
           "openExternal": true
-        },
-        {
-          "class": "DepictionSpacerView",
-          "spacing": 16
-        },
-        {
-          "class": "DepictionLabelView",
-          "text": "© 2026 AnLai",
-          "alignment": 1,
-          "fontSize": 12,
-          "textColor": "#8E8E93"
         }
       ]
     },
