@@ -2,29 +2,48 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tâm sự</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>OmniCar</title>
 <meta name="robots" content="noindex">
+<link rel="icon" href="CydiaIcon.png">
+<link rel="apple-touch-icon" href="CydiaIcon.png">
 <style>
-  :root { --bg: #fafafa; --fg: #222; --muted: #888; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #111; --fg: #eee; --muted: #777; } }
-  html, body { height: 100%; margin: 0; }
-  body {
-    background: var(--bg); color: var(--fg);
-    font: 18px/1.7 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    display: flex; align-items: center; justify-content: center;
-    padding: 0 16px; box-sizing: border-box; text-align: center;
+  :root { --bg:#F4F3FA; --card:rgba(255,255,255,.72); --ink:#1C1C2E; --sub:#5E6285; --line:rgba(255,255,255,.9); }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0E0E16; --card:rgba(26,26,38,.8); --ink:#F2F2F7; --sub:#A4A6C2; --line:rgba(255,255,255,.12); }
   }
-  main { max-width: 600px; }
-  p { margin: 0 0 1em; white-space: pre-line; }
-  .date { color: var(--muted); font-size: 14px; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; color:var(--ink); font:16px/1.6 -apple-system, system-ui, sans-serif;
+         background:var(--bg) radial-gradient(120% 80% at 0% 0%, #C9BAFC66, transparent 60%),
+                    radial-gradient(120% 80% at 100% 0%, #A6DDFD66, transparent 60%),
+                    radial-gradient(120% 80% at 0% 100%, #FEC4D866, transparent 60%),
+                    radial-gradient(120% 80% at 100% 100%, #A0F1D966, transparent 60%); }
+  .wrap { max-width:560px; margin:0 auto; padding:40px 16px; text-align:center; }
+  .icon { width:112px; height:112px; border-radius:26px; box-shadow:0 12px 32px #6B5BD640; }
+  h1 { margin:16px 0 4px; font-size:28px; }
+  .tag { color:var(--sub); margin:0 0 24px; }
+  .card { text-align:left; padding:20px 22px; border-radius:20px; background:var(--card); border:1px solid var(--line);
+          box-shadow:0 8px 24px #6B5BD61A; }
+  .card h2 { margin:0 0 12px; font-size:20px; }
+  .card p { margin:0 0 14px; }
+  .card p:last-child { margin:0; }
+  .date { color:var(--sub); font-size:14px; text-align:right; }
 </style>
 </head>
 <body>
-<main>
-  <!-- Sửa dòng tâm sự ở đây -->
-  <p>Dự án OmniCar đã dừng lại. Cảm ơn mọi người đã đồng hành.</p>
-  <p class="date">27/10/2026</p>
-</main>
+<div class="wrap">
+  <img class="icon" src="CydiaIcon.png" alt="">
+  <h1>OmniCar</h1>
+  <p class="tag">The power of CarPlay.</p>
+  <div class="card">
+    <!-- Sửa nội dung tâm sự ở đây -->
+    <h2>Cảm ơn anh em</h2>
+    <p>OmniCar ban đầu chỉ là một project cá nhân mình làm cho xe của mình. Thấy hay nên mình chia sẻ lên đây, muốn anh em cùng đam mê có thêm một thứ để nghịch. Hành trình đó vui hơn mình tưởng rất nhiều.</p>
+    <p>Nhưng càng về sau càng có nhiều vấn đề phát sinh. Mỗi ngày mình nhận rất nhiều tin nhắn hỏi han, nhờ hỗ trợ. Không trả lời thì thấy có lỗi với anh em, mà trả lời hết thì mình không có thời gian. Mình vẫn còn công việc chính, nên cũng không còn đủ thời gian để sửa lỗi hay phát triển thêm cái mới cho tử tế.</p>
+    <p>Vì vậy mình quyết định dừng OmniCar tại đây. Repo này sẽ không còn cập nhật và mình cũng không hỗ trợ cài đặt nữa, mong anh em thông cảm.</p>
+    <p>Cảm ơn tất cả mọi người đã tin tưởng, đã dùng, đã góp ý và đã đồng hành với mình suốt thời gian qua. Chúc anh em lái xe an toàn.</p>
+    <p class="date">AnLai, 27/10/2026</p>
+  </div>
+</div>
 </body>
 </html>
