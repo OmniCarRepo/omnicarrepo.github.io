@@ -1,3 +1,10 @@
+**1.0.4**
+- iOS 15: iPhone apps on the car screen rotate correctly on iPhone 7, 8 and X; full-screen YouTube no longer turns sideways; no more hang on the Apple logo at boot.
+- Split Screen now fits square (around 850x800) and tall car screens with the dock at the bottom; fixed layouts for 2 or 3 panes in both landscape and portrait, picked by thumbnail.
+- Home screen: icons spread evenly over the chosen columns and rows, sized to fit; jailbreak apps no longer appear on the car.
+- Speed Bubble: GOFA reads the posted limit correctly; each source (Vietmap Live, GOFA, Waze, Wyn) has its own reader for more stable speed and limit.
+- New: Contact and Donate under Developer (email omnicartweak@gmail.com and ways to support OmniCar); a thank-you page added to the first-run guide.
+
 **1.0.3**
 - Speed Bubble: new source Wyn (speed from GPS; the limit when Wyn shows it, experimental).
 - Speed Bubble: Waze now shows the posted speed limit.

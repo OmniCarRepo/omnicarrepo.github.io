@@ -15,7 +15,7 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "Split CarPlay into 2–3 apps, put iPhone apps like YouTube on the car screen, add a speed bubble and your own startup video. One rootless tweak for iOS 16."
+          "markdown": "Split CarPlay into 2–3 apps, put iPhone apps like YouTube on the car screen, add a speed bubble and your own startup video. One rootless tweak for iOS 15 16 17."
         },
         { "class": "DepictionSeparatorView" },
         {
@@ -27,11 +27,11 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "**Requirements**\n- iOS 16 (15,17,18 not tested yet)\n- Rootless jailbreak: Dopamine or palera1n rootless\n- A car or head unit with CarPlay, wired or wireless\n- Do not use with CarBridge or other tweaks that change CarPlay\n- Respring once after installing; settings apply on the next CarPlay connection\n\n*Watching video while driving may be illegal where you live. Use video apps only when parked.*"
+          "markdown": "**Requirements**\n- iOS 15 16 17 (18 not tested yet)\n- Rootless jailbreak: Dopamine or palera1n rootless\n- A car or head unit with CarPlay, wired or wireless\n- Do not use with CarBridge or other tweaks that change CarPlay\n- Respring once after installing; settings apply on the next CarPlay connection\n\n*Watching video while driving may be illegal where you live. Use video apps only when parked.*"
         },
         { "class": "DepictionSeparatorView" },
         { "class": "DepictionTableTextView", "title": "Version", "text": "__VERSION__" },
-        { "class": "DepictionTableTextView", "title": "Compatibility", "text": "iOS 16, rootless" },
+        { "class": "DepictionTableTextView", "title": "Compatibility", "text": "iOS 15 16 17, rootless" },
         { "class": "DepictionTableTextView", "title": "Developer", "text": "OmniCar" },
         { "class": "DepictionTableTextView", "title": "Price", "text": "Free" },
         { "class": "DepictionSeparatorView" },
