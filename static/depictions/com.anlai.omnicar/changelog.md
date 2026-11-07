@@ -1,3 +1,13 @@
+**1.0.5**
+- New: license activation. An Activation page in Settings to start a trial or enter your key; your 8-character device code, tap to copy; Buy a license opens prices and contact.
+- New: iPhone interface for CarPlay apps. In Apps on the car screen, tap a CarPlay app and turn on iPhone interface to run it like on your iPhone instead of its CarPlay interface.
+- New: app scale. Tap an app in Apps on the car screen and set App size from 60 to 100 % (default 80 %) so text and buttons fit the car screen.
+- New: GPS calibration for your car. Speed Bubble gets a slider of plus or minus up to 10 km/h to match your dashboard.
+- YouTube on the car: quitting and reopening no longer turns it with the iPhone; full-screen video stays inside its pane; videos open even while the feed is still scrolling.
+- Split Screen: the OmniCar button is back on the dock in cars that give CarPlay only part of the screen (VinFast VF6); the divider knob hides with the ••• bar; the dock no longer gets stuck.
+- Tapping the Speed Bubble no longer restarts CarPlay.
+- Removed: the YouTube Orientation option and the Donate page.
+
 **1.0.4**
 - iOS 15: iPhone apps on the car screen rotate correctly on iPhone 7, 8 and X; full-screen YouTube no longer turns sideways; no more hang on the Apple logo at boot.
 - Split Screen now fits square (around 850x800) and tall car screens with the dock at the bottom; fixed layouts for 2 or 3 panes in both landscape and portrait, picked by thumbnail.
